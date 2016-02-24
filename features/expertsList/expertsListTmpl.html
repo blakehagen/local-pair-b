@@ -1,4 +1,5 @@
 <div class="list-wrapper">
+
     <div class="header">
         <div class="sub-header">
             <h1>localPair</h1>
@@ -11,24 +12,42 @@
 
         <div class="sub-header right">
             <nav>
-                <p><span><a href="">sign up</a></span>
+                <p>
+                    <span><a href="">sign up</a></span>
                     <span><a href="">login</a></span>
-                    <span><a href="">FAQ</a></span></p>
+                    <span><a href="">FAQ</a></span>
+                </p>
             </nav>
         </div>
     </div>
 
     <div class="title-section">
         <div class="sub-title-section">
-            <h3>Find an Expert</h3>
+            <h3>Pair with an Expert</h3>
             <p>Find a local expert. Level up your skills.</p>
         </div>
         <div class="sub-title-section search-container">
             <input type="text" placeholder="What do you want to learn?">
-            <input id="sml" type="text" placeholder="Zip Code">
+            <input id="sml" type="text" placeholder="Enter Zipcode">
+        </div>
+    </div>
+
+    <div class="expert-list-container">
+        <div class="expert-list-item" ng-repeat="expert in experts">
+            <div class="img-container">
+                <img src="http://lorempixel.com/150/150/people/">
+            </div>
+            <div class="expert-content">
+                <p id="name">{{expert.name}}</p>
+                <p id="desc">{{expert.city}}</p>
+                <p id="desc">{{expert.subjects}}</p>
+
+            </div>
         </div>
 
+
     </div>
+
 
 
 </div>

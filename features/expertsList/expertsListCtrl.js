@@ -1,6 +1,9 @@
-angular.module('localPair').controller('expertsListCtrl', function($scope){
+angular.module('localPair').controller('expertsListCtrl', function($scope, mainService){
     
-    $scope.test = 'test';
+    $scope.getExperts = function(){
+       $scope.experts = mainService.getExperts();
+       console.log($scope.experts);
+    }();
     
     
     
