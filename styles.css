@@ -28,7 +28,7 @@ h1 {
     font-family: 'Poiret One', cursive;
     color: #6D6E6E;
     margin: 0;
-    line-height: 76px;
+    font-size: 44px;
 }
 
 .list-wrapper {
@@ -39,32 +39,72 @@ h1 {
 
 .header {
     height: 80px;
-    /*border: 1px solid blue;*/
+    /*border-bottom: 2px solid #6D6E6E;*/
+    position: relative
 }
+
+.header-top {
+    /*border: 1px solid red;*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 116px;
+}
+
+    .header-top .btn {
+        border: 1px solid #FFCD4F;
+        background: #FFF;
+        border-radius: 6px;
+        width: 136px;
+        height: 32px;
+        text-align: center;
+        margin-top: 9px;
+        cursor: pointer;
+        box-shadow: 2px 2px 1px #ddd;
+    }
+    
+    .btn p {
+        font-family: "Lato", sans-serif;
+        line-height: 31px;
+        margin: 0;
+        font-size: 15px;
+        font-weight: 400;
+        color: #FFCD4F;
+        
+    }
 
 .sub-header {
     display: inline-block;
-    height: 100%;
-    vertical-align: top;
+    /*border: 1px solid green;*/
     padding-left: 100px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 3px;
+
 }
 
 .right {
     float: right;
     padding-left: 0;
     padding-right: 100px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    
 }
 
     nav p {
         margin: 0;
         font-family: 'Lato', sans-serif;
-        font-weight: 700;
-        line-height: 76px;
+        font-weight: 400;
         font-size: 20px;
         color: #333;
+        padding-bottom: 2px;
+
     }
     
     p span {
         margin: 0 20px;
+        
     }
 
