@@ -15,6 +15,10 @@ body {
     margin: 0;
 }
 
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
+
 a {
     text-decoration: none;
 }
@@ -27,7 +31,6 @@ a:link, a:visited, a:hover {
 h1 {
     font-family: 'Poiret One', cursive;
     color: #6D6E6E;
-    margin: 0;
     font-size: 44px;
 }
 
@@ -66,7 +69,6 @@ h1 {
     .btn p {
         font-family: "Lato", sans-serif;
         line-height: 31px;
-        margin: 0;
         font-size: 15px;
         font-weight: 400;
         color: #FFCD4F;
@@ -94,7 +96,6 @@ h1 {
 }
 
     nav p {
-        margin: 0;
         font-family: 'Lato', sans-serif;
         font-weight: 400;
         font-size: 20px;
@@ -107,4 +108,43 @@ h1 {
         margin: 0 20px;
         
     }
+    
+.title-section {
+    width: 100%;
+    height: 40vh;
+    /*border: 1px solid red;*/
+    background: url('http://bossfight.co/wp-content/uploads/2015/11/boss-fight-free-high-quality-stock-images-photos-photography-man-mountain-macbook-pro.jpg') no-repeat center center;
+    /*background: url('http://bossfight.co/wp-content/uploads/2015/07/boss-fight-free-stock-images-photography-photos-high-resolution-bikes-on-water-denmark.jpeg') no-repeat center center;*/
+    /*background: url('http://bossfight.co/wp-content/uploads/2016/01/boss-fight-free-high-quality-stock-images-photos-photography-buildings-city.jpg') no-repeat center center;*/
+    /*background: url('/assets/water-drops-window-compressor.jpeg') no-repeat center center;*/
+    background-size: cover; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+    .title-section .sub-title-section {
+        width: 100%;
+        text-align: center;
+        /*border: 1px solid red;*/
+        
+    }
+    
+    .sub-title-section h3 {
+        font-family: "Open Sans", sans-serif;
+        color: rgb(255,255,255);
+        font-weight: 100;
+        font-size: 62px;
+    }
+    
+    .sub-title-section p {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 100;
+        color: #FFF;
+        font-size: 18px;
+    }
+    
+.search-container {
+    margin-top: 20px;
+}
 
