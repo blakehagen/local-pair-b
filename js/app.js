@@ -12,7 +12,8 @@ angular.module('localPair', ['ui.router'])
 
             .state('expertsList', {
                 url: '/experts',
-                templateUrl: '/features/expertsList/expertsListTmpl.html'
+                templateUrl: '/features/expertsList/expertsListTmpl.html',
+                controller: 'expertsListCtrl'
 
             })
 

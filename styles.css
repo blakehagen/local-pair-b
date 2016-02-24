@@ -3,3 +3,66 @@
     -webkit-box-sizing: border-box;
 }
 
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited, a:hover {
+    text-decoration: none;
+    color: #333;
+}
+
+h1 {
+    font-family: 'Poiret One', cursive;
+    color: #6D6E6E;
+    margin: 0;
+    line-height: 76px;
+}
+
+.list-wrapper {
+    /*border: 1px solid red;*/
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    height: 80px;
+    /*border: 1px solid blue;*/
+}
+
+.sub-header {
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+    margin: 0 100px;
+}
+
+.right {
+    float: right;
+}
+
+    nav p {
+        margin: 0;
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        line-height: 76px;
+        font-size: 20px;
+        color: #333;
+    }
+    
+    p span {
+        margin: 0 20px;
+    }
+
