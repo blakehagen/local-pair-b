@@ -122,6 +122,13 @@ h1 {
     min-height: 240px;
     /*border: 1px solid red;*/
     background: url('http://bossfight.co/wp-content/uploads/2015/11/boss-fight-free-high-quality-stock-images-photos-photography-man-mountain-macbook-pro.jpg') no-repeat center center;
+    
+        /*background: url('http://bossfight.co/wp-content/uploads/2015/11/boss-fight-free-stock-high-resolution-photos-photography-images-creative-commons-zero-people-mountain.jpg') no-repeat center center;*/
+        
+    /*background: url('http://bossfight.co/wp-content/uploads/2015/05/boss-fight-free-stock-images-image-photos-photo-photography-notebook-meeting-table-people.jpg') no-repeat center center;*/
+    
+    /*background: url('http://bossfight.co/wp-content/uploads/2015/05/boss-fight-free-stock-images-photos-photography-taxi-cab-london.jpg') no-repeat center center;*/
+    
     background-size: cover; 
     display: flex;
     flex-direction: column;

@@ -1,4 +1,4 @@
-angular.module('localPair').controller('expertsListCtrl', function($scope, mainService){
+angular.module('localPair').controller('expertsListCtrl', function($scope, mainService, $state){
     
     $scope.getExperts = function(){
        $scope.experts = mainService.getExperts();
@@ -6,6 +6,10 @@ angular.module('localPair').controller('expertsListCtrl', function($scope, mainS
     }();
     
     // mainService.getRandomPeople();
+    
+    $scope.getProfile = function(){
+        $state.go('expertDetails')
+    };
     
     
     
