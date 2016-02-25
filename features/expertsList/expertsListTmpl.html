@@ -34,14 +34,16 @@
 
     <div class="expert-list-container">
         <div class="expert-list-item" ng-repeat="expert in experts">
+            <div class="profile btn">
+                <p>View Profile</p>
+            </div>
             <div class="img-container">
-                <img src="http://lorempixel.com/150/150/people/">
+                <img ng-src="{{expert.img}}">
             </div>
             <div class="expert-content">
                 <p id="name">{{expert.name}}</p>
                 <p id="desc">{{expert.city}}</p>
                 <p id="desc">{{expert.subjects}}</p>
-
             </div>
         </div>
 

@@ -5,6 +5,8 @@ angular.module('localPair').controller('expertsListCtrl', function($scope, mainS
        console.log($scope.experts);
     }();
     
+    // mainService.getRandomPeople();
+    
     
     
     
