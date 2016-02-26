@@ -55,7 +55,7 @@ angular.module('localPair').service('mainService', function ($http, $q) {
             "city": "Salamanca",
             "zipcode": "06984",
             "img": 'https://randomuser.me/api/portraits/med/women/14.jpg',
-            "description": "erat neque non quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam fringilla cursus purus. Nullam scelerisque neque sed sem egestas blandit. Nam nulla"
+            "description": "Erat neque non quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam fringilla cursus purus. Nullam scelerisque neque sed sem egestas blandit. Nam nulla"
         },
         {
             "name": "Colby Perkins",
