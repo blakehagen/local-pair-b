@@ -340,7 +340,7 @@ h1 {
         font-weight: 400;
         color: #2AB69D;
         text-align: center;
-        margin-bottom: 8px;
+        margin: 4px 0;
     }
     
     .sub-detail p {
