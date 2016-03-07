@@ -73,6 +73,8 @@ footer {
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 9999;
+        border: 1px solid red;
+        width: 100%;
     }
     
     .sub-title-section h3 {
@@ -117,7 +119,7 @@ footer {
     
 #sml {
     margin-left: 10px;
-    width: 130px;
+    width: 100px;
 }
 
 ::-webkit-input-placeholder {
@@ -506,6 +508,41 @@ footer {
 #review-desc {
     font-size: 15px;
     
+}
+    
+
+/* MEDIA QUERIES */
+
+/* HOME VIEW */
+
+@media (max-width:800px) {
+    .sub-title-section h3 {
+        font-size: 48px;
+    }
+    
+    .sub-title-section p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:450px) {
+    .sub-title-section h3 {
+        font-size: 36px;
+    }
+    
+    .sub-title-section p {
+        font-size: 12px;
+    }
+    
+    .search-container input {
+        width: 180px;
+        font-size: 13px;
+        padding-left: 7px;
+    }
+    
+    #sml {
+        width: 80px;
+    }
 }
     
 
