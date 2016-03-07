@@ -73,7 +73,6 @@ footer {
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 9999;
-        border: 1px solid red;
         width: 100%;
     }
     
@@ -246,7 +245,6 @@ footer {
 }
 
 .header-top {
-    /*border: 1px solid red;*/
     position: absolute;
     top: 0;
     right: 0;
@@ -516,6 +514,19 @@ footer {
 /* HOME VIEW */
 
 @media (max-width:800px) {
+    
+    .header-top {
+        margin-right: 30px;
+    }
+    
+    .sub-header {
+        padding-left: 30px;
+    }
+    
+    .right {
+        padding-right: 30px;
+    }
+    
     .sub-title-section h3 {
         font-size: 48px;
     }

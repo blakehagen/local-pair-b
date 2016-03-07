@@ -159,3 +159,14 @@
 }
 
 /* * * * * * * * * */
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 800px){
+   .title-section {
+        height: 46vh;
+    } 
+    
+    
+}
