@@ -150,7 +150,7 @@ footer {
         font-family: "Open Sans", sans-serif;
         font-size: 36px;
         font-weight: 400;
-        padding: 20px 0 4px 0;
+        padding: 30px 0 4px 0;
         color: #333;  
     }
     
@@ -165,9 +165,9 @@ footer {
 
     .desc-item {
         /*border: 1px solid blue;*/
-        margin:  0 60px 30px 60px;
+        margin:  10px 0 24px;
         padding: 10px;
-        width: 75%;
+        width: 300px;
     }
 
     .desc-item p {
@@ -225,11 +225,6 @@ footer {
         width: 45%;
         
     }
-
-
-
-
-
 
 /* */
 
@@ -513,6 +508,13 @@ footer {
 
 /* HOME VIEW */
 
+@media (max-width:900px) {
+        
+    .how-it-works-desc {
+        width: 95%;
+    }
+}
+
 @media (max-width:800px) {
     
     .header-top {
@@ -534,6 +536,23 @@ footer {
     .sub-title-section p {
         font-size: 16px;
     }
+
+}
+
+@media (max-width:650px) {
+    
+    .how-it-works-desc .fa {
+        font-size: 70px;
+    }
+    
+    .desc-item p {
+        font-size: 16px;
+    }
+
+
+
+
+
 }
 
 @media (max-width:450px) {

@@ -1,4 +1,4 @@
-angular.module('localPair', ['ui.router'])
+angular.module('localPair', ['ui.router','ngMaterial'])
 
     .config(function ($stateProvider, $urlRouterProvider) {
 
