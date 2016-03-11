@@ -12,11 +12,22 @@
         <div class="sub-header right">
             <nav>
                 <p>
-                    <span><a href="">sign up</a></span>
-                    <span><a href="">login</a></span>
+                    <span><a href="">Sign Up</a></span>
+                    <span><a href="">Login</a></span>
                     <span><a href="">FAQ</a></span>
                 </p>
-                <span><i class="fa fa-bars"></i></span>
+                <md-menu md-position-mode="target-right target" >
+                    <span><i class="fa fa-bars" ng-click="$mdOpenMenu($event)"></i></span>
+                    <md-menu-content width="4" >
+                        <md-menu-item ng-repeat="item in ['Become an Expert', 'FAQ', 'Sign Up', 'Login']">
+                            <md-button ng-click="ctrl.announceClick($index)">
+                                <div layout="row" flex>
+                                    <p flex>{{item}}</p>
+                                </div>
+                            </md-button>
+                        </md-menu-item>
+                    </md-menu-content>
+                </md-menu>
             </nav>
         </div>
     </div>
@@ -42,21 +53,7 @@
                 </div>
             </div>
         </div>
-        <md-menu md-position-mode="target-right target" >
-            <md-button aria-label="Open demo menu" class="md-icon-button" ng-click="$mdOpenMenu($event)">
-                click here
-            </md-button>
-            <md-menu-content width="4" >
-                <md-menu-item ng-repeat="item in [1, 2, 3]">
-                    <md-button ng-click="ctrl.announceClick($index)">
-                        <div layout="row" flex>
-                            <p flex>Option {{item}}</p>
-                            <md-icon md-menu-align-target md-svg-icon="call:portable-wifi-off" style="margin: auto 3px auto 0;"></md-icon>
-                        </div>
-                    </md-button>
-                </md-menu-item>
-            </md-menu-content>
-        </md-menu>
+
         <section class="home-section">
             <div class="title">
                 <h4>How it Works</h4>

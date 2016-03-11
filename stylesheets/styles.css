@@ -536,12 +536,12 @@ footer {
     
     .sub-title-section h3 {
         font-size: 48px;
+        /*font-weight:400;*/
     }
     
     .sub-title-section p {
         font-size: 16px;
     }
-
 }
 
 @media (max-width:650px) {
@@ -563,7 +563,6 @@ footer {
 
     nav p {
         display: none;
-
     }
 
     nav span {
@@ -575,20 +574,36 @@ footer {
         display: inherit;
         padding-bottom: 3px;
         color: #2AB69D;
+        cursor: pointer;
     }
-
-
-
-
 }
 
 @media (max-width:450px) {
+    .how-it-works-desc {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .desc-item {
+        margin: 4px 0 14px;
+        padding: 6px;
+        /*border: 1px solid red;*/
+    }
+
+    .how-it-works-desc .fa {
+        font-size: 100px;
+    }
+
+    .desc-item p {
+        font-size: 24px;
+    }
+
     .sub-title-section h3 {
         font-size: 36px;
     }
     
     .sub-title-section p {
-        font-size: 12px;
+        font-size: 13px;
     }
     
     .search-container input {
