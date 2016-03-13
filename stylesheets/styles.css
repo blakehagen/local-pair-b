@@ -185,7 +185,7 @@ footer {
     
 .desc-detail {
     margin: 10px 50px 0px 50px;
-    /*border: 1px solid green;   */
+    /*border: 1px solid green;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -542,6 +542,49 @@ footer {
     .sub-title-section p {
         font-size: 16px;
     }
+
+    .desc-detail {
+        width: 90%;
+    }
+
+    .col {
+        margin: 20px;
+    }
+
+    .col p {
+        font-size: 18px;
+    }
+
+    .col h3 {
+        margin-top: -8px;
+        font-size: 30px;
+    }
+
+    .col #portrait_img {
+        width: 25%;
+    }
+}
+
+@media (max-width:700px) {
+    .desc-detail {
+        flex-direction: column;
+        margin: 14px auto;
+    }
+
+    .col-rev {
+        flex-direction: column-reverse;
+    }
+
+    .col {
+        width: 90%;
+        margin: 10px;
+    }
+
+    .col img {
+        width: 60%;
+    }
+
+
 }
 
 @media (max-width:650px) {
@@ -614,6 +657,14 @@ footer {
     
     #sml {
         width: 80px;
+    }
+
+    .col h3 {
+        font-size: 26px;
+    }
+
+    .col p {
+        font-size: 16px;
     }
 }
     
