@@ -1,0 +1,32 @@
+<div class="header">
+  <div class="sub-header">
+    <h1>localPair</h1>
+  </div>
+  <div class="header-top">
+    <div class="btn">
+      <p>Become an Expert</p>
+    </div>
+  </div>
+
+  <div class="sub-header right">
+    <nav>
+      <p>
+        <span><a href="">Sign Up</a></span>
+        <span><a href="">Login</a></span>
+        <span><a href="">FAQ</a></span>
+      </p>
+      <md-menu md-position-mode="target-right target" >
+        <span><i class="fa fa-bars" ng-click="$mdOpenMenu($event)"></i></span>
+        <md-menu-content width="4" >
+          <md-menu-item ng-repeat="item in ['Become an Expert', 'FAQ', 'Sign Up', 'Login']">
+            <md-button ng-click="ctrl.announceClick($index)">
+              <div layout="row" flex>
+                <p flex>{{item}}</p>
+              </div>
+            </md-button>
+          </md-menu-item>
+        </md-menu-content>
+      </md-menu>
+    </nav>
+  </div>
+</div>
