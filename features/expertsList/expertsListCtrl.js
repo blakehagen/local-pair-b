@@ -1,18 +1,13 @@
-angular.module('localPair').controller('expertsListCtrl', function($scope, mainService, $state){
-    
-    $scope.getExperts = function(){
-       $scope.experts = mainService.getExperts();
-       console.log($scope.experts);
+angular.module('localPair').controller('expertsListCtrl', function ($rootScope, $scope, mainService, $state) {
+
+    $scope.getExperts = function () {
+        $scope.experts = mainService.getExperts();
+        console.log($rootScope.searchItem);
     }();
-    
-    // mainService.getRandomPeople();
-    
-    $scope.getProfile = function(){
+
+    $scope.getProfile = function () {
         $state.go('expertDetails')
     };
-    
-    
-    
-    
-    
+
+
 });

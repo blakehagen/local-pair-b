@@ -3,7 +3,7 @@
     <header-directive></header-directive>
 
     <div class="container">
-        <div class="expert-list-item" ng-repeat="expert in experts">
+        <div class="expert-list-item" ng-repeat="expert in experts | filter:searchItem">
             <div class="profile btn" ng-click="getProfile()">
                 <p>View Profile</p>
             </div>
@@ -22,7 +22,6 @@
 
 
     </div>
-
 
 
 </div>

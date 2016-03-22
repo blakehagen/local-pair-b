@@ -160,7 +160,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-bottom: 1px solid #6D6E6E;
+    border-bottom: 1px solid #ccc;
 }
 
     .desc-item {
