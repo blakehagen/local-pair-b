@@ -1,4 +1,4 @@
-angular.module('localPair').controller('expertsListCtrl', function ($rootScope, $scope, mainService, $state) {
+angular.module('localPair').controller('expertsCtrl', function ($rootScope, $scope, mainService, $state) {
 
   $scope.getExperts = function () {
     $scope.experts = mainService.getExperts();
@@ -12,8 +12,11 @@ angular.module('localPair').controller('expertsListCtrl', function ($rootScope, 
 
   $scope.getExperts();
 
-  $scope.getProfile = function () {
-    $state.go('expertDetails');
+  $scope.getProfile = function (id) {
+    $scope.getSelectedExpert = {};
+    console.log('id: ', id);
+    $scope.selectedExpert = mainService.getSelectedExpert(id);
+    console.log($scope.selectedExpert);
   };
 
 

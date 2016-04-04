@@ -1,25 +1,27 @@
-angular.module('localPair', ['ui.router','ngMaterial'])
+angular.module('localPair', ['ui.router', 'ngMaterial'])
 
-    .config(function ($stateProvider, $urlRouterProvider) {
+  .config(function ($stateProvider, $urlRouterProvider) {
 
-        $stateProvider
-            .state('home', {
-                url: '/',
-                templateUrl: '/features/home/homeTmpl.html'
-            })
+    $stateProvider
+      .state('home', {
+        url: '/',
+        templateUrl: '/features/home/homeTmpl.html'
+      })
 
-            .state('expertsList', {
-                url: '/experts',
-                templateUrl: '/features/expertsList/expertsListTmpl.html',
-                controller: 'expertsListCtrl'
-            })
+      .state('expertsList', {
+        url: '/experts',
+        templateUrl: '/features/expertsList/expertsListTmpl.html',
+        controller: 'expertsCtrl'
+      })
 
-            .state('expertDetails', {
-                url: '/expert-details',
-                templateUrl: '/features/expertDetail/expertDetailTmpl.html'
-            })
+      .state('expertDetails', {
+        url: '/expert/:id',
+        templateUrl: '/features/expertDetail/expertDetailTmpl.html',
+        controller: 'expertsCtrl'
 
-        $urlRouterProvider
-            .otherwise('/');
+      })
 
-    });
+    $urlRouterProvider
+      .otherwise('/');
+
+  });

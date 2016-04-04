@@ -4,7 +4,7 @@
 
   <div class="container">
     <div class="expert-list-item" ng-repeat="expert in experts | filter:searchItem">
-      <div class="profile btn" ng-click="getProfile()">
+      <div class="profile btn" ng-click="getProfile(expert.id)">
         <p>View Profile</p>
       </div>
       <div class="img-container">
@@ -16,7 +16,7 @@
         <p id="expert-skills">{{ expert.skills }}</p>
 
       </div>
-      <div class="btn list-view-btn-sml" ng-click="getProfile()">
+      <div class="btn list-view-btn-sml" ng-click="getProfile(expert.id)">
         <p id="sml-btn-text">View Profile</p>
       </div>
     </div>

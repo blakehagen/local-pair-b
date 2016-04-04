@@ -429,4 +429,13 @@ angular.module('localPair').service('mainService', function () {
     return expertData;
   };
 
+  this.getSelectedExpert = function (id) {
+    for (var i = 0; i < expertData.length; i++) {
+      if (expertData[i].id === id) {
+        return expertData[i];
+      }
+    }
+    return "No matches found."
+  }
+
 });
