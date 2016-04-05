@@ -3,7 +3,8 @@
   <header-directive></header-directive>
 
   <div class="container">
-    <div class="expert-list-item" ng-repeat="expert in experts | filter:searchItem">
+    <div class="expert-list-item"
+         ng-repeat="expert in experts | filter:{skills: searchItem} | filter:{country: searchLocation} track by $index">
       <div class="profile btn" ng-click="getProfile(expert.id)">
         <p>View Profile</p>
       </div>
@@ -13,7 +14,9 @@
       <div class="expert-content">
         <p id="name">{{expert.first_name}} {{expert.last_name}}</p>
         <p id="desc">{{expert.city}}, {{ expert.country }}</p>
-        <p id="expert-skills">{{ expert.skills }}</p>
+        <p id="expert-skills">
+          <span class="skill-list" ng-repeat="skill in expert.skills track by $index">{{ skill }}&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+        </p>
 
       </div>
       <div class="btn list-view-btn-sml" ng-click="getProfile(expert.id)">

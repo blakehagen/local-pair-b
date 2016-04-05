@@ -373,11 +373,14 @@ p span {
 
 #expert-skills {
   font-size: 17px;
-  letter-spacing: 0.5px;
   line-height: 26px;
   color: #4A4A4A;
   margin: 12px 18px;
   padding: 0;
+}
+
+.skill-list {
+  margin: 0;
 }
 
 .profile {
@@ -526,6 +529,7 @@ hr {
   font-weight: 100;
   color: #333;
   padding: 0 2px;
+  line-height: 21px;
 
 }
 

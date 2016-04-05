@@ -1,13 +1,12 @@
 <div class="list-wrapper">
 
   <header-directive></header-directive>
-
   <section class="expert-detail">
     <div class="img-container-big">
-      <img src="https://randomuser.me/api/portraits/med/women/1.jpg">
+      <img ng-src="{{ selectedExpert.img }}">
     </div>
     <div class="text-container-big">
-      <p id="expert-name">Justine Forbes
+      <p id="expert-name">{{selectedExpert.first_name}} {{ selectedExpert.last_name }}
         <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
           class="fa fa-star-o"></i>
       </p>
@@ -27,7 +26,9 @@
     <div class="details-aside">
       <div class="sub-detail">
         <h4>Expert Subjects</h4>
-        <p>Pasta, Soups, Noodles, Pies, Desserts, Seafood</p>
+        <p>
+          <span class="skill-list" ng-repeat="skill in selectedExpert.skills track by $index">{{ skill }}&nbsp;|&nbsp;</span>
+        </p>
       </div>
       <div class="sub-detail">
         <h4>Education</h4>

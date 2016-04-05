@@ -17,9 +17,9 @@ angular.module('localPair', ['ui.router', 'ngMaterial'])
       .state('expertDetails', {
         url: '/expert/:id',
         templateUrl: '/features/expertDetail/expertDetailTmpl.html',
-        controller: 'expertsCtrl'
+        controller: 'expertDetailsCtrl'
 
-      })
+      });
 
     $urlRouterProvider
       .otherwise('/');

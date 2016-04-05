@@ -431,11 +431,11 @@ angular.module('localPair').service('mainService', function () {
 
   this.getSelectedExpert = function (id) {
     for (var i = 0; i < expertData.length; i++) {
-      if (expertData[i].id === id) {
+      if (expertData[i].id === parseFloat(id)) {
         return expertData[i];
       }
     }
-    return "No matches found."
+    return 'Not found'
   }
 
 });
