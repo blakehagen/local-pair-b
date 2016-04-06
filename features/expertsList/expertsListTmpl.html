@@ -2,13 +2,20 @@
 
   <header-directive></header-directive>
 
-  <div class>
-  <search-input></search-input>
+  <div class="list-view-search">
+    <search-input></search-input>
+  </div>
+
+  <div class="list-view-message-container" ng-if="!filteredExperts.length">
+    <p>No matches found. Search again or browse experts.</p>
+    <div>
+      <div class="browse-btn" ng-click="refreshExperts()">Browse</div>
+    </div>
   </div>
 
   <div class="container">
     <div class="expert-list-item"
-         ng-repeat="expert in experts | filter:{skills: searchItem} | filter:{country: searchLocation} track by $index">
+         ng-repeat="expert in filteredExperts = (experts | filter: {skills: searchItem} | filter: {country: searchLocation})">
       <div class="profile btn" ng-click="getProfile(expert.id)">
         <p>View Profile</p>
       </div>
