@@ -21,6 +21,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 a {
   text-decoration: none;
+  user-focus: none;
 }
 
 a:link, a:visited, a:hover {
@@ -478,12 +479,32 @@ p span {
 
 .expert-detail-actions {
   margin-left: 20px;
+  /*border: 1px solid blue;*/
+}
+
+.action-box {
+  border: 1px solid green;
+  margin: 0 30px;
+  width: 100px;
+  height: 100%;
 }
 
 #action-text {
   text-align: left;
   margin-bottom: 10px;
-  padding: 0px;
+  padding: 0;
+}
+
+.expert-detail-actions .fa {
+  color: #4A4A4A;
+  padding-top: 16px;
+  margin: 25px 10px 25px 45px;
+  cursor: pointer;
+  outline: none;
+}
+
+.fa-5x {
+  font-size: 8em;
 }
 
 .date-picker-container {

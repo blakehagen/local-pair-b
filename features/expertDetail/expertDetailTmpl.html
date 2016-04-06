@@ -12,11 +12,24 @@
       </p>
       <hr>
       <div class="expert-detail-actions">
-        <div class="date-picker-container">
-          <p id="action-text" ">Check My Calendar</p>
-          <md-datepicker ng-model="birthday" class="date-picker"></md-datepicker>
+        <i class="fa fa-clock-o fa-5x" ng-click="showGeneralAvailability()" ng-show="showTimes"></i>
 
-        </div>
+        <i class="fa fa-envelope-o fa-5x" ng-show="msgInput" ng-click="showMessageInputBox()"></i>
+
+        <i class="fa fa-calendar fa-5x" ng-show="showCalendar" ng-click="showApptCalendar()"></i>
+
+        <!--<div class="action-box">-->
+<!--asdf-->
+        <!--</div>-->
+
+
+
+
+
+        <!--<div class="date-picker-container">-->
+          <!--<p id="action-text" ">Check My Calendar</p>-->
+          <!--<md-datepicker ng-model="birthday" class="date-picker"></md-datepicker>-->
+        <!--</div>-->
 
       </div>
     </div>
