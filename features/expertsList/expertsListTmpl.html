@@ -2,6 +2,10 @@
 
   <header-directive></header-directive>
 
+  <div class>
+  <search-input></search-input>
+  </div>
+
   <div class="container">
     <div class="expert-list-item"
          ng-repeat="expert in experts | filter:{skills: searchItem} | filter:{country: searchLocation} track by $index">
